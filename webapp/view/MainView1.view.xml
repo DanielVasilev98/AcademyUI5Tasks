@@ -6,7 +6,7 @@
 					<content>
 						<Button id="helloDialogButton" text="{i18n>openDialogButtonText}" press=".onOpenDialog" class="sapUiSmallMarginEnd"/>
 						<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"/>
-						<List headerText="Products" items="{ path: 'productsModel>/ProductCollection' }">
+						<List headerText="Products" items="{ path: 'productsModel>/ProductCollection' }" mode="MultiSelect" includeItemInSelection="true">
 							<StandardListItem title="{productsModel>Name}" description="{productsModel>Description}" counter="{productsModel>Quantity}"/>
 						</List>
 					</content>
